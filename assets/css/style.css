@@ -29,8 +29,17 @@ header {
   height: 7em;
 }
 
-.margin-1 {
-  margin-top: 3em;
+.padding-1 {
+  padding-top: 3em;
+}
+
+.texture-1 {
+  background-color: #00151c;
+  background-image: url("../../assets/img/patterns/carbon-fibre-big.png");
+}
+
+.invert {
+  filter: invert(100%);
 }
 
 a {
