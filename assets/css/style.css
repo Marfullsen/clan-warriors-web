@@ -1,10 +1,53 @@
+/* Aim to cellphone size */
+
 body {
-  font-family: 'New Tegomin', serif;
   margin: 0;
+  font-family: 'Ming', sans-serif;
 }
 
-.alineado {
-  align-self: center;
+header {
+  min-height: 20rem;
+}
+
+.banner {
+  height: 13em;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.gridcol {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.corona {
+  width: auto;
+  height: 7em;
+}
+
+.margin-1 {
+  margin-top: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aoewallpaper {
+  background-image: url("../../assets/img/warriors-cover.png");
+  background-size: cover;
+}
+
+.font-1{
+  font-family: 'Vinque', sans-serif;
+}
+
+.centrado {
+  text-align: center;
 }
 
 .white-text {
@@ -12,11 +55,10 @@ body {
 }
 
 .wood {
-  background-color: chocolate;
+  background-color: midnightblue;
   /*background-image: url("../../assets/img/patterns/dark-wood.png");
   background-image: url("../../assets/img/patterns/tasky.png");*/
   background-image: url("../../assets/img/patterns/shley-tree-1.png");
-  
 }
 
 .col {
@@ -61,4 +103,17 @@ body {
   background-size: 50px 100%;
   background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
   background-position: 0 0;
+}
+
+@media only screen and (min-width: 600px)  {
+  header {
+    min-height: 40rem;
+  }
+  .corona {
+    width: fit-content;
+    height: fit-content;
+  }
+  .banner {
+    height: 30em;
+  }
 }
