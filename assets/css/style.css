@@ -10,10 +10,24 @@ header {
 }
 
 .banner {
-  height: 13em;
+  height: 80vh;
   display: grid;
   justify-content: center;
   align-content: center;
+}
+
+.card-effect {
+  padding: 3px;
+  border: dashed white 5px;
+  border-radius: 40px;
+}
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
 }
 
 .gridcol {
@@ -83,7 +97,9 @@ a {
 
 .col {
   display: flex;
-  justify-content:space-around
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 .responsive {
@@ -95,6 +111,7 @@ a {
 
 .container {
   width: 20rem;
+  height: fit-content;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   border-radius: 7px;
   background-color: rgba(255, 255, 255, .15);
@@ -149,8 +166,13 @@ a {
   color: #db2f2f;
 }
 
-/* RESEÑAS */
+/* END RESEÑAS */
 
+/* DESCARGAS */
+.max-viewport-screen {
+  height: 100vh;
+}
+/* FIN DESCARGAS */
 
 .skewed {
   position: absolute;
@@ -190,10 +212,25 @@ a {
   header {
     min-height: 40rem;
   }
+
   .corona {
     width: fit-content;
     height: fit-content;
   }
+
+  .col {
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card-effect {
+    padding: 20px;
+    border: dashed white 10px;
+    border-radius: 40px;
+    background: #001111;
+    background-image: url("../../assets/img/patterns/low-contrast-linen.png");
+  }
+
   .banner {
     height: 30em;
   }
